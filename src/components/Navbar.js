@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; // Importing Image component from next/image
 import styles from '../styles/navbar.module.css'; 
+import {  FaChevronDown } from 'react-icons/fa';
+import { CiSearch, CiHeart } from 'react-icons/ci'; 
+import { BsHandbag } from "react-icons/bs";
+import { IoPersonOutline } from "react-icons/io5";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false); // Add this line
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,16 +33,34 @@ const Navbar = () => {
                     />
                 </Link>
                 <div className={styles.logoText}>LOGO</div>
+
                 <div className={styles.icons}>
-                    <Link href="/search">🔍</Link>
-                    <Link href="/favorites">♡</Link>
-                    <Link href="/cart">🛒</Link>
+                    <Link href="/search">
+                        <CiSearch size={28} />
+                    </Link>
+                    <Link href="/favorites">
+                        <CiHeart size={28} />
+                    </Link>
+                    <Link href="/cart">
+                        <BsHandbag size={22} />
+                    </Link>
+                    <Link href="/contact">
+                        <IoPersonOutline size={24} />
+                    </Link>
                     <div className={styles.languageDropdown}>
-                        <button>🌐</button>
-                        <div className={styles.dropdownContent}>
-                            <Link href="#">English</Link>
-                            <Link href="#">Hindi</Link>
-                        </div>
+                        <button 
+                            onClick={() => setDropdownOpen(!dropdownOpen)} 
+                            style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}
+                        >
+                            <h2 style={{ marginRight: '5px' }}>ENG</h2>
+                            <FaChevronDown size={20} /> {/* Dropdown icon */}
+                        </button>
+                        {dropdownOpen && (
+                            <div className={styles.dropdownContent}>
+                                <Link href="#">English</Link>
+                                <Link href="#">Hindi</Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -50,8 +73,7 @@ const Navbar = () => {
                 <li><Link href="/contact">CONTACT US</Link></li>
             </ul>
 
-      <hr className={styles.thinLine} />
-
+            <hr className={styles.thinLine} />
         </nav>
     );
 };

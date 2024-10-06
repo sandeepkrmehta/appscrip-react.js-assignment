@@ -1,4 +1,8 @@
 /* General reset and global styles */
+
+@import '@fontsource/poppins/400.css'; /* Regular weight */
+@import '@fontsource/poppins/700.css'; /* Bold weight */
+
 body{
   margin: 0;
   padding: 0;

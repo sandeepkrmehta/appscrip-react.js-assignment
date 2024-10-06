@@ -11,6 +11,13 @@
   padding: 10px 20px;
 }
 
+.logoText {
+  margin-left: 10px; /* Space between logo and text */
+  font: bold;
+  font-weight: 800;
+  font-size: 24px;
+}
+
 .logoContainer {
   display: flex;
   justify-content: space-between;
@@ -121,6 +128,7 @@
   .logoText {
       margin-left: 10px; /* Space between logo and text */
       font: bold;
+      
   }
 
   .icons {
@@ -157,3 +165,81 @@
     flex-direction: column; /* Stack vertically */
   }
 }
+
+
+/* YourStyles.module.css */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+.languageDropdown {
+  position: relative; /* To position dropdown */
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+.dropdownContent a {
+  padding: 10px;
+  text-decoration: none;
+  color: black; /* Customize link color */
+}
+
+.dropdownContent a:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+
+
+/* navbar.module.css */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+.icons svg {
+  color: black; /* Change this to your desired gray color */
+  transition: color 0.3s; /* Optional: smooth color transition on hover */
+}
+
+.icons svg:hover {
+  color: #666; /* Optional: darken the color on hover */
+}
+
+.languageDropdown {
+  position: relative; /* To position dropdown */
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 10; /* Ensure it appears above other content */
+}
+
+.dropdownContent a {
+  padding: 10px;
+  text-decoration: none;
+  color: black; /* Customize link color */
+}
+
+.dropdownContent a:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+

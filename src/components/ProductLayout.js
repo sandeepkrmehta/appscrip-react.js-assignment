@@ -3,6 +3,8 @@ import FilterSection from './FilterSection';
 import ProductList from './ProductList';
 import styles from "../styles/productLayout.module.css";
 //  import styles from '../styles/styles.module.css';
+import {  FaChevronDown } from 'react-icons/fa';
+
 
 const ProductLayout = () => {
     const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Nulla volutpat felis a nibh fringilla, eu mollis eros viverra. Sed nec.";
@@ -25,7 +27,7 @@ const ProductLayout = () => {
     return (
         <div className={styles.productLayout}>
             <div className={styles.productSection}>
-                <h1>DISCOVER OUR PRODUCTS</h1>
+                <h1 className={styles.discoverOurProduct}>DISCOVER OUR PRODUCTS</h1>
                 <p dangerouslySetInnerHTML={{ __html: loremText }} />
             </div>
             
@@ -40,9 +42,10 @@ const ProductLayout = () => {
                     </button>
                 </div>
                 <div className={styles.recommendedContainer}>
-                    <button className={styles.recommendedButton} onClick={toggleSortOptions}>
+                    {/* <button className={styles.recommendedButton} onClick={toggleSortOptions}> */}
                         Recommended
-                    </button>
+                        <FaChevronDown size={20} />
+                    {/* </button> */}
                     {showSortOptions && (
                         <div className={styles.sortOptions}>
                             <select value={sortOption} onChange={handleSortChange}>

@@ -20,7 +20,8 @@ const Footer = () => {
       <div className={styles.topFooter}>
         <div className={styles.newsletter}>
           <h2 className={styles.newsletterTitle}>BE THE FIRST TO KNOW</h2>
-          <p className={styles.newsletterDescription}>Sign up for updates from mettā muse</p>
+          <p className={styles.newsletterDescription}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. this is simply dummy text.
+          </p>
           <form className={styles.newsletterForm}>
             <input type="email" placeholder="Enter your e-mail..." required className={styles.newsletterInput} />
             <button type="submit" className={styles.newsletterButton}>SUBSCRIBE</button>
@@ -57,7 +58,7 @@ const Footer = () => {
 
         <div className={styles.column}>
           <ul className={styles.quickLinks}>
-          <h2>Quick Links</h2>
+          <h2>QUICK LINKS</h2>
             <li><a href="#">Orders & Shipping</a></li>
             <li><a href="#">Join/Login as a Seller</a></li>
             <li><a href="#">Payment & Pricing</a></li>
@@ -69,7 +70,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.column}>
-  <h2>Follow Us</h2>
+  <h2>FOLLOW US</h2>
   <div className={styles['social-icons']}>
     <a href="#" aria-label="Follow us on Instagram" className={styles.socialIcon}>
       <FontAwesomeIcon icon={faInstagram} size="lg" />
