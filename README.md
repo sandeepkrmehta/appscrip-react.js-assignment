@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+
+---
+
+<<<<<<<   
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -35,6 +38,52 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 =======
+
 # appscrip-react.js-assignment
->>>>>>> d54a791e8bdbddb5f12f5d8f68ea7742207cef97
+
+This is a **Next.js assignment** project designed to create a responsive, functional product page using **HTML** and **CSS**. The project focuses on server-side rendering (SSR) for better SEO and performance. The project includes a filter section with dynamic product updates and is hosted on **Netlify**.
+
+## Features
+
+- **Responsive Design**: Mobile, tablet, and desktop views supported
+- **Sticky Filter Section**: Filter section remains fixed, while the product list is scrollable
+- **SEO Optimization with SSR**: Better performance and search visibility
+- **Clean UI Design**: Custom HTML and CSS for a smooth user experience
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sandeepkrmehta/appscrip-react.js-assignment
+   ```
+   
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Visit the app in your browser:
+   ```bash
+   http://localhost:3000
+   ```
+
+## Live Demo
+
+View the live project here: [Live Website](https://appscriproject.netlify.app)
+
+## GitHub Repository
+
+Source code is available here: [GitHub Repository](https://github.com/sandeepkrmehta/appscrip-react.js-assignment)
+
+## Contact
+
+For questions or feedback, feel free to reach out via email: **mehtasandeepkumar0@gmail.com**
+
+>>>>>>>
