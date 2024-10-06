@@ -193,3 +193,28 @@
     flex-direction: column;
   }
 }
+
+
+/* styles/footer.module.css */
+.dropdownLine {
+  border-top: 1px solid #ccc; /* Adjust color as needed */
+  margin: 10px 0; /* Space above and below the line */
+}
+.toggleHeader {
+  cursor: pointer; /* Show pointer on hover */
+}
+
+/* Ensure the dropdown only affects mobile devices */
+@media (min-width: 768px) {
+  .toggleHeader {
+    display: none; /* Hide the toggle on desktop */
+  }
+
+  .quickLinks {
+    display: block; /* Always show links on desktop */
+  }
+
+  .dropdownLine {
+    display: none; /* Hide lines on desktop */
+  }
+}

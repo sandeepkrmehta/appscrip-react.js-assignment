@@ -4,7 +4,6 @@ import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as regularHeart } from '@fortawesome/free-regular-svg-icons';
 import Image from 'next/image';
 import styles from '../styles/productLayout.module.css';
-// import styles from '../styles/styles.module.css';
 
 const ProductCard = ({ product }) => {
     return (

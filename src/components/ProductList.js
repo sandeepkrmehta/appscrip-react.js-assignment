@@ -40,14 +40,13 @@ const ProductList = () => {
         }
     };
 
-    // Function to toggle favorite status of a product
     const toggleFavorite = (productId) => {
         const updatedProducts = products.map(product => 
             product.id === productId ? { ...product, isFavorited: !product.isFavorited } : product
         );
         setProducts(updatedProducts);
         setFilteredProducts(updatedProducts.filter(product => 
-            product.occasion && product.occasion.includes(selectedOccasion) // Ensure filtered state is updated
+            product.occasion && product.occasion.includes(selectedOccasion)
         ));
     };
 
@@ -66,7 +65,7 @@ const ProductList = () => {
                             <ProductCard 
                                 key={product.id} 
                                 product={product} 
-                                toggleFavorite={toggleFavorite} // Pass function to ProductCard
+                                toggleFavorite={toggleFavorite} 
                             />
                         ))
                     )}

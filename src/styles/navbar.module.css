@@ -3,6 +3,7 @@
   height: auto;
   margin-left: 10px; /* Space between hamburger and logo */
 }
+
 .navbar {
   display: flex;
   flex-direction: column; /* Default to column for mobile */
@@ -109,34 +110,32 @@
 
 @media (max-width: 768px) {
   .mobileMenuToggle {
-      display: flex; /* Show on mobile/tablet */
+    display: flex; /* Show on mobile/tablet */
   }
 
   .navLinks {
-      display: none; /* Hide by default */
-      flex-direction: column;
+    display: none; /* Hide by default */
+    flex-direction: column;
   }
 
   .showMenu {
-      display: flex; /* Show when menu is open */
+    display: flex; /* Show when menu is open */
   }
 
   .logoContainer {
-      justify-content: space-between; /* Align items properly */
+    justify-content: space-between; /* Align items properly */
   }
 
   .logoText {
-      margin-left: 10px; /* Space between logo and text */
-      font: bold;
-      
+    margin-left: 10px; /* Space between logo and text */
+    font: bold;
   }
 
   .icons {
-      display: flex;
-      gap: 10px; /* Space between icons */
+    display: flex;
+    gap: 10px; /* Space between icons */
   }
 }
-
 
 .hamburger {
   display: none; /* Hidden by default */
@@ -165,7 +164,6 @@
     flex-direction: column; /* Stack vertically */
   }
 }
-
 
 /* YourStyles.module.css */
 .icons {
@@ -198,8 +196,6 @@
 .dropdownContent a:hover {
   background-color: #f0f0f0; /* Hover effect */
 }
-
-
 
 /* navbar.module.css */
 .icons {
@@ -241,5 +237,3 @@
 .dropdownContent a:hover {
   background-color: #f0f0f0; /* Hover effect */
 }
-
-

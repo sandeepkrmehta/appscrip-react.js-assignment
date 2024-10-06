@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // Importing Image component from next/image
+import Image from 'next/image';
 import styles from '../styles/navbar.module.css'; 
-import {  FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 import { CiSearch, CiHeart } from 'react-icons/ci'; 
 import { BsHandbag } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false); // Add this line
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,8 +28,8 @@ const Navbar = () => {
                         src="/images/logo.png" 
                         alt="Logo" 
                         className={styles.logoImg} 
-                        width={40} // Set the width you want
-                        height={40} // Set the height you want
+                        width={40} 
+                        height={40} 
                     />
                 </Link>
                 <div className={styles.logoText}>LOGO</div>
@@ -53,7 +53,7 @@ const Navbar = () => {
                             style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}
                         >
                             <h2 style={{ marginRight: '5px' }}>ENG</h2>
-                            <FaChevronDown size={20} /> {/* Dropdown icon */}
+                            <FaChevronDown size={20} />
                         </button>
                         {dropdownOpen && (
                             <div className={styles.dropdownContent}>
