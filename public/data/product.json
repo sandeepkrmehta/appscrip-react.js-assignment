@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "name": "Men's Casual Shirt",
+        "image": "/images/product1.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual"
+    },
+    {
+        "id": 2,
+        "name": "Women's Summer Dress",
+        "image": "/images/product2.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual",
+        "isFavorited": false
+    },
+    {
+        "id": 3,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/product3.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual",
+        "isFavorited": false
+    },
+
+    {
+        "id": 4,
+        "name": "PPXOC Milkyway dress in pressed",
+        "image": "/images/R6__0424.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual",
+        "isFavorited": false
+    },
+    {
+        "id": 5,
+        "name": "Women's Summer Dress",
+        "image": "/images/R6__0425.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual",
+        "isFavorited": false
+    },
+    {
+        "id": 6,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0427.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+    ,
+    {
+        "id": 7,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0431.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+    ,
+    {
+        "id": 8,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0436.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+    ,
+    {
+        "id": 9,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0440.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual",
+        "isFavorited": false
+    }
+
+    ,
+    {
+        "id": 10,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0445.jpeg",
+        "description": "A soft cotton T-shirt for babies.",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+    ,
+    {
+        "id": 11,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0453.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+    ,
+    {
+        "id": 12,
+        "name": "Baby's Cotton T-shirt",
+        "image": "/images/R6__0455r.jpeg",
+        "description": "Sign in or Create an account to see pricing",
+        "occasion": "Casual", 
+        "isFavorited": false
+    }
+
+]

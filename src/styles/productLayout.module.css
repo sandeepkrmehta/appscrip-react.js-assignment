@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+.productLayout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height layout */
+}
+
+.productSection {
+    padding: 16px;
+    text-align: center;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.filterToggleContainer {
+    display: flex;
+    gap: 16px; /* Space between buttons */
+}
+
+.mainContent {
+    display: flex;
+    flex-grow: 1;
+    overflow-y: auto; 
+    padding-bottom: 80px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: white;
+    padding: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hide {
+    display: none; /* Hides the sidebar */
+}
+
+.productListWrapper {
+    width: 80%; /* Remaining 50% for product list */
+    display: flex;
+    flex-wrap: wrap; /* Multiple rows of products */
+    gap: 16px; /* Space between product cards */
+    padding: 16px;
+}
+
+.productListWrapper > div {
+    flex: 1 0 calc(33.33% - 16px); /* 3 products per row on large screens */
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filterSection {
+        width: 50%; /* Filter section takes 50% on smaller screens */
+    }
+
+    .productListWrapper {
+        width: 50%; /* Product list takes 50% on smaller screens */
+    }
+
+    .productListWrapper > div {
+        flex: 1 0 calc(50% - 16px); /* 2 products per row on smaller screens */
+    }
+}
+
+/* Filter Section */
+.filterSection {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    max-height: 400px; /* Set a max-height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    min-height: 100vh;
+    overflow-y: hidden;
+    
+}
+
+.thinLine {
+    border: 0;
+    height: 0.2px;
+    background: rgb(211, 211, 211);
+    margin: 10px 0;
+}
+
+.filterGroup {
+    margin-bottom: 10px;
+    padding-block: 10px;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdownIcon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdownIcon i {
+    font-size: 14px; /* Adjust the size of the dropdown icon */
+    color: #333; /* Customize the color */
+  }
+  
+
+
+  .dropdownOptions {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdownOptions p {
+    text-decoration: underline;
+    color: rgb(174, 174, 174);
+  }
+  
+  .card {
+    border: 1px solid #ddd; /* Optional: Add border for card */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 16px; /* Optional: Padding inside the card */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.imageContainer {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.titleWithIcon {
+    margin: 10px 0; /* Spacing for title */
+}
+
+.descriptionWithIcon {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between description and icon */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+}
+
+.productDescription {
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow description to take available space */
+}
+
+.favorited, .notFavorited {
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    margin-left: 8px; /* Space between description and icon */
+}
+
+
+@media (max-width: 768px) {
+    .productCard {
+        flex: 1 1 calc(50% - 16px); /* 2 products per row on smaller screens */
+    }
+}
+
+
+
+.card {
+    border: 1px solid #ddd; /* Optional: Add border for card */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 16px; /* Optional: Padding inside the card */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.imageContainer {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.titleWithIcon {
+    margin: 10px 0; /* Spacing for title */
+}
+
+.descriptionWithIcon {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between description and icon */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width */
+}
+
+.productDescription {
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow description to take available space */
+}
+
+.favorited, .notFavorited {
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    margin-left: 8px; /* Space between description and icon */
+}
+
+/* Product List Wrapper */
+.productListWrapper {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for responsive layout */
+    gap: 16px; /* Space between product cards */
+}
+
+/* Adjust number of products per row */
+.productCard {
+    flex: 1 1 calc(33.33% - 16px); /* 3 products per row */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .productCard {
+        flex: 1 1 calc(50% - 16px); /* 2 products per row on smaller screens */
+    }
+}
+
+
+
+.card {
+    border: 1px solid #ddd; /* Optional: Add border for card */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 16px; /* Optional: Padding inside the card */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: flex-start; /* Align items to the start */
+    width: calc(33.33% - 16px); /* Three items in a row, accounting for gaps */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    
+}
+
+.imageContainer {
+    width: 100%; /* Full width for the image */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.titleWithIcon {
+    margin: 10px 0; /* Spacing for title */
+}
+
+.descriptionWithIcon {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between description and icon */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width for description with icon */
+}
+
+.productDescription {
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow description to take available space */
+}
+
+.favorited, .notFavorited {
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    margin-left: 8px; /* Space between description and icon */
+}
+
+/* Product List Wrapper */
+.productListWrapper {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for responsive layout */
+    gap: 16px; /* Space between product cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 16px); /* 2 products per row on mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: calc(33.33% - 16px); /* 3 products per row on larger screens */
+    }
+}
+
+
+/* new css code */
+.container {
+    padding: 10px;
+    
+  }
+  
+  .productList {
+    display: flex;
+    flex-wrap: wrap; /* Allows products to wrap to the next line */
+    gap: 16px; /* Space between product cards */
+  }
+  
+  .productCard {
+    flex: 0 1 auto; /* Adjusted to take only necessary space */
+    max-width: calc(33.33% - 16px); /* Max width for desktop screens */
+    box-sizing: border-box; /* Ensure padding and borders are included in the total width */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+    margin: 8px; /* Optional: add some space around each card */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .productCard {
+      max-width: calc(50% - 16px); /* Max width for mobile screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productCard {
+      max-width: 100%; /* Full width for very small screens */
+    }
+  }
+  
+  /* Header Styles */
+  .productHeader {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .productHeader h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .productHeader p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    max-width: 800px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Product Section */
+  .productSection {
+    margin-bottom: 20px;
+  }
+  
+  .productLayout {
+    padding: 20px;
+  }
+  
+  /* Product Info */
+  .productInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .itemsCount {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  
+  /* Sort Options */
+  .sortOptions {
+    margin-top: 10px;
+  }
+  
+  /* Filter Section */
+  .filterSection {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .productListWrapper {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Description Styles */
+  .productDescription {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  /* Style specifically for the 'Sign in' text with underline */
+  .signInText {
+    text-decoration: underline;
+    cursor: pointer; /* Optional: change cursor to pointer for better UX */
+  }
+  

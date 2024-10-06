@@ -1,0 +1,19 @@
+/* General reset and global styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body, .filterSection, .productSection {
+    font-family: 'Poppins', sans-serif;
+  }
+  

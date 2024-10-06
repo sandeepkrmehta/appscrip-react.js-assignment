@@ -1,0 +1,152 @@
+/* styles/footer.module.css */
+.footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: ; */
+  padding: 40px 80px;
+  z-index: 10; 
+}
+
+.topFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 120px;
+}
+
+.newsletter, .contact {
+  flex: 1;
+  min-width: 250px; /* Adjust as needed */
+  margin: 10px;
+}
+
+.newsletterTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.newsletterDescription {
+  margin-bottom: 15px;
+}
+
+.newsletterForm {
+  display: flex;
+  padding-top: 28px;
+}
+
+.newsletterInput {
+  /* flex: 1; */
+  min-width: 300px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.newsletterButton {
+  padding: 10px 15px;
+  color: gray;
+  background-color: black;
+  border: 1px solid rgb(107, 107, 107);
+  border-radius: 4px;
+  /* color: #fff; */
+  cursor: pointer;
+
+}
+
+.hrLine {
+  border: 1px solid #fff;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each column */
+  margin: 10px;
+}
+
+.quickLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.quickLinks li {
+  margin: 5px 0;
+}
+
+.quickLinks a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.quickLinks a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.socialIcon {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.payment-methods {
+  margin-top: 10px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .topFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter, .contact {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .bottomFooter {
+    flex-direction: column; /* Stack columns on small screens */
+  }
+
+  .column {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 4px;
+}
+
+
+.socialIcon {
+  color: #fff; /* Change to your desired color */
+  margin-right: 15px; /* Adjust spacing */
+  font-size: 24px; /* Size of the icons */
+  transition: color 0.3s; /* Add a hover effect */
+}
+
+.socialIcon:hover {
+  color: #ff7e3d; /* Change color on hover */
+}
