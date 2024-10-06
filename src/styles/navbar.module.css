@@ -1,19 +1,19 @@
 .logoImg {
-  width: 40px; /* Adjust width as necessary */
+  width: 40px;
   height: auto;
-  margin-left: 10px; /* Space between hamburger and logo */
+  margin-left: 10px;
 }
 
 .navbar {
   display: flex;
-  flex-direction: column; /* Default to column for mobile */
+  flex-direction: column;
   background-color: white;
   color: black;
   padding: 10px 20px;
 }
 
 .logoText {
-  margin-left: 10px; /* Space between logo and text */
+  margin-left: 10px;
   font: bold;
   font-weight: 800;
   font-size: 24px;
@@ -27,14 +27,14 @@
 }
 
 .mobileMenuToggle {
-  display: none; 
+  display: none;
   cursor: pointer;
 }
 
 .dash {
   width: 30px;
   height: 4px;
-  background-color: black; 
+  background-color: black;
   margin: 5px 0;
 }
 
@@ -104,41 +104,41 @@
 .thinLine {
   border: 0;
   height: 0.2px;
-  background: rgb(211, 211, 211); /* Thin gray line */
+  background: rgb(211, 211, 211);
   margin: 10px 0;
 }
 
 @media (max-width: 768px) {
   .mobileMenuToggle {
-    display: flex; /* Show on mobile/tablet */
+    display: flex;
   }
 
   .navLinks {
-    display: none; /* Hide by default */
+    display: none;
     flex-direction: column;
   }
 
   .showMenu {
-    display: flex; /* Show when menu is open */
+    display: flex;
   }
 
   .logoContainer {
-    justify-content: space-between; /* Align items properly */
+    justify-content: space-between;
   }
 
   .logoText {
-    margin-left: 10px; /* Space between logo and text */
+    margin-left: 10px;
     font: bold;
   }
 
   .icons {
     display: flex;
-    gap: 10px; /* Space between icons */
+    gap: 10px;
   }
 }
 
 .hamburger {
-  display: none; /* Hidden by default */
+  display: none;
   flex-direction: column;
   cursor: pointer;
 }
@@ -146,94 +146,30 @@
 .hamburger div {
   width: 30px;
   height: 3px;
-  background-color: black; /* Black color for the dashes */
+  background-color: black;
   margin: 3px 0;
 }
 
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Show the hamburger icon on mobile */
+    display: flex;
   }
 
   .navLinks {
-    display: none; /* Hide nav links initially on mobile */
+    display: none;
   }
 
   .showMenu {
-    display: flex; /* Show nav links when the menu is toggled */
-    flex-direction: column; /* Stack vertically */
+    display: flex;
+    flex-direction: column;
   }
 }
 
-/* YourStyles.module.css */
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* Space between icons */
-}
-
-.languageDropdown {
-  position: relative; /* To position dropdown */
-}
-
-.dropdownContent {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  z-index: 10; /* Ensure it appears above other content */
-}
-
-.dropdownContent a {
-  padding: 10px;
-  text-decoration: none;
-  color: black; /* Customize link color */
-}
-
-.dropdownContent a:hover {
-  background-color: #f0f0f0; /* Hover effect */
-}
-
-/* navbar.module.css */
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* Space between icons */
-}
-
 .icons svg {
-  color: black; /* Change this to your desired gray color */
-  transition: color 0.3s; /* Optional: smooth color transition on hover */
+  color: black;
+  transition: color 0.3s;
 }
 
 .icons svg:hover {
-  color: #666; /* Optional: darken the color on hover */
-}
-
-.languageDropdown {
-  position: relative; /* To position dropdown */
-}
-
-.dropdownContent {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
-  z-index: 10; /* Ensure it appears above other content */
-}
-
-.dropdownContent a {
-  padding: 10px;
-  text-decoration: none;
-  color: black; /* Customize link color */
-}
-
-.dropdownContent a:hover {
-  background-color: #f0f0f0; /* Hover effect */
+  color: #666;
 }

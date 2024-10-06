@@ -27,6 +27,7 @@ const Footer = () => {
           <h3>CALL US</h3>
           <p> +44 221 133 5360</p>
           <p>customercare@mettamuse.com</p>
+          
           <p><strong>CURRENCY</strong></p>
           <p>USD</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

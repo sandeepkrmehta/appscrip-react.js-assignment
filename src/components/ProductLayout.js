@@ -4,6 +4,7 @@ import ProductList from './ProductList';
 import styles from "../styles/productLayout.module.css";
 import { FaChevronDown } from 'react-icons/fa';
 
+
 const ProductLayout = () => {
     const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Nulla volutpat felis a nibh fringilla, eu mollis eros viverra. Sed nec.";
     const [sortOption, setSortOption] = useState("NEWEST FIRST");
@@ -35,10 +36,10 @@ const ProductLayout = () => {
                 <div className={styles.itemsCount}>3425 ITEMS</div>
                 <div className={styles.filterToggleContainer}>
                     <button className={styles.filterToggle} onClick={toggleFilter}>
-                        {showFilter ? '< Hide Filter' : '< Show Filter'}
+                        {showFilter ? '⟨ Hide Filter' : '⟨ Show Filter'}
                     </button>
                 </div>
-                <div className={styles.recommendedContainer}>
+                <div className={styles.recommendedContainer} onClick={toggleSortOptions}>
                     Recommended
                     <FaChevronDown size={20} />
                     {showSortOptions && (

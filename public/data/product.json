@@ -6,6 +6,103 @@
         "description": "Sign in or Create an account to see pricing",
         "occasion": "Casual"
     },
+        {
+            "id": 1,
+            "name": "Product 1",
+            "image": "/images/product1.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual"
+        },
+        {
+            "id": 2,
+            "name": "Product 2",
+            "image": "/images/product2.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual",
+            "isFavorited": false
+        },
+        {
+            "id": 3,
+            "name": "Product 3",
+            "image": "/images/product3.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual",
+            "isFavorited": false
+        },
+        {
+            "id": 4,
+            "name": "Product 4",
+            "image": "/images/R6__0424.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual",
+            "isFavorited": false
+        },
+        {
+            "id": 5,
+            "name": "Product 5",
+            "image": "/images/R6__0425.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual",
+            "isFavorited": false
+        },
+        {
+            "id": 6,
+            "name": "Product 6",
+            "image": "/images/R6__0427.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual", 
+            "isFavorited": false
+        },
+        {
+            "id": 7,
+            "name": "Product 7",
+            "image": "/images/R6__0431.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual", 
+            "isFavorited": false
+        },
+        {
+            "id": 8,
+            "name": "Product 8",
+            "image": "/images/R6__0436.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual", 
+            "isFavorited": false
+        },
+        {
+            "id": 9,
+            "name": "Product 9",
+            "image": "/images/R6__0440.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual",
+            "isFavorited": false
+        },
+        {
+            "id": 10,
+            "name": "Product 10",
+            "image": "/images/R6__0445.jpeg",
+            "description": "A soft cotton T-shirt for babies.",
+            "occasion": "Casual", 
+            "isFavorited": false
+        },
+        {
+            "id": 11,
+            "name": "Product 11",
+            "image": "/images/R6__0453.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual", 
+            "isFavorited": false
+        },
+        {
+            "id": 12,
+            "name": "Product 12",
+            "image": "/images/R6__0455r.jpeg",
+            "description": "Sign in or Create an account to see pricing",
+            "occasion": "Casual", 
+            "isFavorited": false
+        }
+    ,
+    
     {
         "id": 2,
         "name": "Women's Summer Dress",
